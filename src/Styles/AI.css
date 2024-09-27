@@ -1,0 +1,121 @@
+body, html, #root, .App{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.App{
+    background-image: url("../Images/ai_bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#brand-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    height: 7%;
+    background-color: #1e0915d9;
+    color: #d1bece;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#brand-name:hover{
+    cursor: pointer;
+}
+
+#logo-img{
+    height: 90%;
+    margin-right: 10px;
+}
+
+#chat-section{
+    height: 78%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.message-block-body{
+    width: auto;
+    max-width: 70%;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #8b4666;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: large;
+    color: white;
+    background-color: #0e07149c;
+    font-family: monospace;
+}
+
+.message-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+#message-typing-section{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.message-block-time-secion{
+    display: flex;
+    font-size: x-small;
+}
+.message-block-data-secion{
+    display: flex;
+}
+
+#message-bar{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    border: 2px solid #e96d89;
+    padding: 0px 10px;
+    background-color: #0000008f;
+    color: white;
+    font-family: monospace;
+}
+
+#send-btn{
+    display: flex;
+    width: 10%;
+    height: 40%;
+    background-color: #0000008f;
+    border: 2px solid #e96d8936;
+    color: white;
+    border-radius: 5px;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+}
+#send-btn:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:300px){
+    #message-bar {
+        width: 60%;
+    }
+    #send-btn{
+        width: 15%;
+    }
+}
