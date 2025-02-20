@@ -93,7 +93,13 @@ function AI() {
             </div>
 
             <div id="message-typing-section">
-                <input id="message-bar" type="text" placeholder="Ask a Question..." />
+                <input id="message-bar" type="text" placeholder="Ask a Question..."
+                        onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                            sendMessage()
+                        }
+                    }} 
+                />
                 {/* <button id="send-btn">Send</button> */}
                 <button id="send-btn" onClick={() => { sendMessage() }}>&#10147;</button>
             </div>
